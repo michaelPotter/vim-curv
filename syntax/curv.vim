@@ -20,9 +20,10 @@ syn keyword curvPolyShapes nothing everything
 
 syn match curvComma ","
 syn match curvPipeline ">>"
-syn match curvNumbers "\<\d\|\.\d" contains=curvNumber display transparent
+syn match curvNumbers "\<\d\|\.\d\|\<0x" contains=curvNumber display transparent
 syn match curvNumber "\d\+" display contained
 syn match curvNumber "\.\d\+" display contained
+syn match curvNumber "0x[0-9A-F]\+" display contained
 syn match curvComment "//.*$" contains=@Spell,curvCommentTodo
 " syn match curvFunction "[a-z0-9]\+(\@="
 
