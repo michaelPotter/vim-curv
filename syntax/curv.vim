@@ -9,8 +9,8 @@
 
 syn clear
 
-syn keyword curvLetIn let in
-syn keyword curvImperativeKeywords if else while for do
+syn keyword curvLetIn let in do
+syn keyword curvImperativeKeywords if else while for
 syn keyword curvBoolean complement union intersection difference symmetric_difference row
 syn keyword curvTransform move rotate reflect scale at align stretch twist bend swirl
 syn keyword curvCommentTodo      TODO FIXME XXX TBD contained
