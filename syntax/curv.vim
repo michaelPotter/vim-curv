@@ -20,10 +20,14 @@ syn keyword curvPolyShapes nothing everything
 
 syn match curvComma ","
 syn match curvPipeline ">>"
+
 syn match curvNumbers "\<\d\|\.\d\|\<0x" contains=curvNumber display transparent
 syn match curvNumber "\d\+" display contained
 syn match curvNumber "\.\d\+" display contained
 syn match curvNumber "0x[0-9A-F]\+" display contained
+
+syn region curvString start=/"/ skip=/\\"/ end=/"/
+
 syn match curvComment "//.*$" contains=@Spell,curvCommentTodo
 " syn match curvFunction "[a-z0-9]\+(\@="
 
@@ -38,6 +42,7 @@ hi def link curvTransform Function
 " hi def link curvFunction Function
 hi def link curvNumbers Number
 hi def link curvNumber Number
+hi def link curvString String
 hi def link curvComma Operator
 hi def link curvPipeline Operator
 hi def link curvComment Comment
