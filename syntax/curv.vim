@@ -28,7 +28,7 @@ syn match curvNumber "0x[0-9A-F]\+" display contained
 
 " TODO highlight string interpolations
 syn region curvString start=/"/ skip=/\\"/ end=/"/ contains=curvStringInterpolation
-syn match curvStringInterpolation "\$[a-zA-Z0-9_]\+" contained
+syn match curvStringInterpolation "\${\?[a-zA-Z0-9_]\+}\?" contained
 
 syn match curvComment "//.*$" contains=@Spell,curvCommentTodo
 syn keyword curvCommentTodo      TODO FIXME XXX TBD contained
