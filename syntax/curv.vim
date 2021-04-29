@@ -41,3 +41,4 @@ hi def link curvNumber Number
 hi def link curvComma Operator
 hi def link curvPipeline Operator
 hi def link curvComment Comment
+hi def link curvCommentTodo Todo
